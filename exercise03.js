@@ -1,23 +1,25 @@
 var j;
 var i;
 for (j = 1; j <= 10; j +=1) {
-	for (i = 1; i <= 10; i +=1) {
+	var riga = "";
+  for (i = 1; i <= 10; i +=1) {
   		if(i!==j){
   			if (i!==10) {
-  				console.log(0+","+"\t");
+  				riga += 0+","+"\t";
         }
   			else{
-  				console.log(0+"\t");
+          riga += 0+"\t";
   			}
   		}
   		else{
         if (i!==10) {
-          console.log(1+","+"\t");
+          riga += 1+","+"\t";
         }
         else{
-          console.log(1+"\t");
+          riga += 1+"\t";
         }
       }
 	}
+  console.log(riga);
 	console.log("\n");
 }
