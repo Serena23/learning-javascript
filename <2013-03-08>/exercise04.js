@@ -11,11 +11,13 @@ var values = ['goofy', 'scrooge'];
 
 var select = function(data, key, values){
 	var a = [];
-	data.forEach(function(item, index, array){
-   	for(var i=0; i<values.length, i++){
-   		item.key===values[i];
-   		a.push(item);
-   	}
-});
+	for (var j = 0 ; j<data.length; j++){
+      for(var i=0; i<values.length; i++){
+     		var d1 = (data[j])[key];
+        var d2 = values[i];
+        if(d1===d2)
+     		   a.push(data[j]);
+     	}
+  }
 	return a;
 }
